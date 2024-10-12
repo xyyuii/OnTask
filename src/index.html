@@ -2,11 +2,38 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>OnTask</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="render.js"></script>
   </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+  <body> 
+
+    <!-- input screen -->
+     <div id="new" style="display: none;">
+      <div id="row">
+      </div>
+      <div id="error">
+        <p>Enter digits between 0-99 in each box and name your timer.</p>
+      </div>
+     </div>
+
+    <!-- timer screen -->
+     <div id="timer">
+      <h2 id="title">OnTask ⌚</h2>
+      <p id="version">v0.1</p>
+      <div>
+        <h1 id="countdown">00:00:00</h1>
+      </div>
+     </div>
+
+     <!-- buttons -->
+     <div id="buttons" style="margin-top: 7px">
+      <button class="blue1" id="toggleStart">Start</button>
+      <button class="red1" id="togglePause">Pause</button>
+     </div>
+
+
+    
+
   </body>
 </html>
